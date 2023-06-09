@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="/youtube.css" />
+    <link rel="stylesheet" href="/general.css" />
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--
+
+
+      ADD     S  E  M  A  M  A  N  T  I  C    ELEMENTS
+
+
+
+    -->
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hb" src="/channel-pic/hamburger-menu.svg" alt="hamburger" />
+        <img class="yls" src="/channel-pic/youtube-logo.svg" alt="yls" />
+      </div>
+      <div class="middle-section">
+        <input class="search-1" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search" src="/channel-pic/search.svg" alt="search" />
+          <div class="tool-tip">Search</div>
+        </button>
+        <button class="vsearch-button">
+          <img
+            class="vsearch"
+            src="/channel-pic/voice-search-icon.svg"
+            alt="vsearch"
+          />
+          <div class="v-tool-tip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="create">
+          <img class="create-img" src="/channel-pic/upload.svg" alt="create" />
+          <div class="create-tool-tip">Create!</div>
+        </div>
+        <div class="yt-apps">
+          <img
+            class="yt-apps-img"
+            src="/channel-pic/youtube-apps.svg"
+            alt="ytapps"
+          />
+          <div class="yt-apps-tool-tip">YouTube Apps</div>
+        </div>
+        <div class="notifications">
+          <div>
+            <img
+              class="notif-img"
+              src="/channel-pic/notifications.svg"
+              alt="notif"
+            />
+            <div class="notif-tool-tip">Notifications</div>
+          </div>
+          <div class="notif-count">7</div>
+        </div>
+        <div class="profile-pic-icon" onclick="profileMenuToggle()">
+          <img
+            class="your-channel-pic"
+            src="/youtube-files/cat1.jpeg"
+            alt="oli"
+          />
+          <div class="profile-menu">Hello JR</div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sb">
+        <div class="home-icon">
+          <img class="sb-home-img" src="/channel-pic/home.svg" alt="home" />
+        </div>
+        <div>Home</div>
+      </div>
+      <div class="sb">
+        <div class="explore-icon">
+          <img
+            class="sb-explore-icon"
+            src="/channel-pic/explore.svg"
+            alt="explore"
+          />
+        </div>
+        <div>Explore</div>
+      </div>
+      <div class="sb">
+        <div class="subscriptions-icon">
+          <img
+            class="sb-subscriptions-icon"
+            src="/channel-pic/subscriptions.svg"
+            alt="subscriptions"
+          />
+        </div>
+        <div>Subscriptions</div>
+      </div>
+      <div class="sb">
+        <div class="originals-icon">
+          <img
+            class="sb-originals-icon"
+            src="/channel-pic/originals.svg"
+            alt="originals"
+          />
+        </div>
+        <div>Originals</div>
+      </div>
+      <div class="sb">
+        <div class="yt-music-icon">
+          <img
+            class="sb-ytmusic-icon"
+            src="/channel-pic/youtube-music.svg"
+            alt="yt-music-icon"
+          />
+        </div>
+        <div>YouTube Music</div>
+      </div>
+      <div class="sb">
+        <div class="library-icon">
+          <img
+            class="sb-library-icon"
+            src="/channel-pic/library.svg"
+            alt="library"
+          />
+        </div>
+        <div>Library</div>
+      </div>
+    </div>
+    <div class="video-previews-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+            <img
+              class="thumbnail-img-1"
+              src="/youtube-files/image-1.webp"
+              alt="unang image"
+          /></a>
+
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-1-img">
+            <a
+              href="https://www.youtube.com/c/mkbhd"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                class="profile-picture"
+                src="/channel-pic/channel-1.jpeg"
+                alt="channel-1"
+              />
+              <div class="channel-tooltip">
+                <div><img src="/channel-pic/channel-1.jpeg" alt="MB" /></div>
+                <div>
+                  <p>Marques Brownlee</p>
+                  <p>15M subscribers</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="channel-1-text">
+            <a
+              href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/c/mkbhd"
+              target="_b"
+              style="text-decoration: none"
+            >
+              <p class="video-author">Marques Brownlee</p>
+            </a>
+            <p class="video-stats">3.4M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-2">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+            <img
+              class="thumbnail-img-2"
+              src="/channel-pic/thumbnail-2.webp"
+              alt="panglawa image"
+            />
+          </a>
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-2">
+          <div class="channel-2-img">
+            <a href="https://www.youtube.com/c/markiplier" target="_blank">
+              <img
+                class="profile-picture-2"
+                src="/channel-pic/channel-2.jpeg"
+                alt="channel-2"
+              />
+              <div class="channel-tooltip">
+                <div><img src="/channel-pic/channel-2.jpeg" alt="MB" /></div>
+                <div>
+                  <p>Markiplier</p>
+                  <p>35M subscribers</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="channel-2-text">
+            <a
+              href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <p class="video-title-2">Try Not to Laugh Challenge &amp;9</p>
+            </a>
+            <a
+              href="https://www.youtube.com/c/markiplier"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <p class="video-author-2">Markiplier</p>
+            </a>
+            <p class="video-stats-2">19M views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-3">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+            <img
+              class="thumbnail-img-3"
+              src="/channel-pic/thumbnail-3.webp"
+              alt="pangatlong image"
+            />
+          </a>
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-3">
+          <div class="channel-3-img">
+            <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank">
+              <img
+                class="profile-picture-3"
+                src="/channel-pic/channel-3.jpeg"
+                alt="channel-3"
+              />
+              <div class="channel-tooltip">
+                <div><img src="/channel-pic/channel-3.jpeg" alt="MB" /></div>
+                <div>
+                  <p>SSSniperWolf</p>
+                  <p>33.5M subscribers</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="channel-3-text">
+            <a
+              href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <p class="video-title-3">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+            </a>
+            <a
+              href="https://www.youtube.com/user/SSSniperWolf"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <p class="video-author-3">SSSniperWolf</p>
+            </a>
+            <p class="video-stats-3">12M views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-4">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-4"
+            src="/channel-pic/thumbnail-4.webp"
+            alt="pangaapat image"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+
+        <div class="video-info-grid-4">
+          <div class="channel-4-img">
+            <a href="https://www.youtube.com/c/veritasium" target="_blank">
+              <img
+                class="profile-picture-4"
+                src="/channel-pic/channel-4.jpeg"
+                alt="channel-4"
+              />
+              <div class="channel-tooltip">
+                <div><img src="/channel-pic/channel-4.jpeg" alt="MB" /></div>
+                <div>
+                  <p>Veritasium</p>
+                  <p>13M subscribers</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="channel-4-text">
+            <p class="video-title-4">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+            <p class="video-author-4">Veritasium</p>
+            <p class="video-stats-4">18M views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-5">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-5"
+            src="/channel-pic/thumbnail-5.webp"
+            alt="ikalimang image"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-5">
+          <div class="channel-5-img">
+            <img
+              class="profile-picture-5"
+              src="/channel-pic/channel-5.jpeg"
+              alt="channel-5"
+            />
+          </div>
+          <div class="channel-5-text">
+            <p class="video-title-5">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+            <p class="video-author-5">CS Dojo</p>
+            <p class="video-stats-5">519K views &#183; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-6.webp"
+            alt="panglima image"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-6.jpeg"
+              alt="channel-6"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">
+              Anything You Can Fit In The Circle I&lsquo;ll Pay For
+            </p>
+            <p class="video-author-6">MrBeast</p>
+            <p class="video-stats-6">141M views&#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-7.webp"
+            alt="war-pic"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-7.jpeg"
+              alt="channel-7"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">
+              Anything You Can Fit In The Circle I&lsquo;ll Pay For
+            </p>
+            <p class="video-author-6">MrBeast</p>
+            <p class="video-stats-6">141M views&#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-8.webp"
+            alt="psgr-plane"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-8.jpeg"
+              alt="channel-8"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">
+              Inside The World's Biggest Passenger Plane
+            </p>
+            <p class="video-author-6">Tech Vision</p>
+            <p class="video-stats-6">3.7M views&#183;10 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-9.webp"
+            alt="heria"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-9.jpeg"
+              alt="channel-9"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">Why Planes Don't Fly Over Tibet</p>
+            <p class="video-author-6">RealLifeLore</p>
+            <p class="video-stats-6">6.6M views&#183;1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-10.webp"
+            alt="pangsampu image"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-10.jpeg"
+              alt="channel-10"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">
+              How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+            </p>
+            <p class="video-author-6">Business Insider</p>
+            <p class="video-stats-6">14M views&#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-11.webp"
+            alt="pangonse image"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-11.jpeg"
+              alt="channel-11"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">
+              Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+            </p>
+            <p class="video-author-6">Destination Tips</p>
+            <p class="video-stats-6">3M views&#183;1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview-6">
+        <div class="thumbnail-row">
+          <img
+            class="thumbnail-img-6"
+            src="/channel-pic/thumbnail-12.webp"
+            alt="pangdose image"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-info-grid-6">
+          <div class="channel-6-img">
+            <img
+              class="profile-picture-6"
+              src="/channel-pic/channel-12.jpeg"
+              alt="channel-12"
+            />
+          </div>
+          <div class="channel-6-text">
+            <p class="video-title-6">
+              What would happen if you didn&lsquo;t drink water? - Mia Nacamulli
+            </p>
+            <p class="video-author-6">TED-Ed</p>
+            <p class="video-stats-6">12M views&#183;5 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/youtube.js" defer></script>
+</html>
